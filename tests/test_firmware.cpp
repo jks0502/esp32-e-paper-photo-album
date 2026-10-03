@@ -8,11 +8,11 @@
 #include <string>
 #include <vector>
 #include "Arduino.h"
-#include "../CoupleFrame/FrameConfig.h"
-#include "../CoupleFrame/Photos.h"
-#include "../CoupleFrame/Slideshow.h"
-#include "../CoupleFrame/DebouncedButton.h"
-#include "../CoupleFrame/src/waveshare/DEV_Config.h"
+#include "../firmware/CoupleFrame/FrameConfig.h"
+#include "../firmware/CoupleFrame/Photos.h"
+#include "../firmware/CoupleFrame/Slideshow.h"
+#include "../firmware/CoupleFrame/DebouncedButton.h"
+#include "../firmware/CoupleFrame/src/waveshare/DEV_Config.h"
 
 void setup();
 void loop();
@@ -256,3 +256,4 @@ int main() {
               "BOOT debounce/hold/wrap/manual timer/deadline, "
               "wrap/restart, sleep commands, BUSY timeout\n", FRAME_PANEL_VERSION);
 }
+

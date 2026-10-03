@@ -10,7 +10,7 @@ call "%FRAME_VS%\VC\Auxiliary\Build\vcvars64.bat" >nul
 if errorlevel 1 exit /b 1
 if not exist build\host mkdir build\host
 for %%v in (1 2) do (
-  cl /nologo /std:c++17 /EHsc /W3 /utf-8 /DFRAME_PANEL_VERSION=%%v /Itests\mocks /ICoupleFrame\src\waveshare /TP CoupleFrame\CoupleFrame.ino CoupleFrame\Photos.cpp CoupleFrame\src\waveshare\DEV_Config.cpp CoupleFrame\src\waveshare\EPD_4in2.cpp CoupleFrame\src\waveshare\EPD_4in2_V2.cpp tests\test_firmware.cpp /Febuild\host\panel%%v.exe /Fobuild\host\ > build\host\compile-panel%%v.log 2>&1
+  cl /nologo /std:c++17 /EHsc /W3 /utf-8 /DFRAME_PANEL_VERSION=%%v /Itests\mocks /Ifirmware\CoupleFrame\src\waveshare /TP firmware\CoupleFrame\CoupleFrame.ino firmware\CoupleFrame\Photos.cpp firmware\CoupleFrame\src\waveshare\DEV_Config.cpp firmware\CoupleFrame\src\waveshare\EPD_4in2.cpp firmware\CoupleFrame\src\waveshare\EPD_4in2_V2.cpp tests\test_firmware.cpp /Febuild\host\panel%%v.exe /Fobuild\host\ > build\host\compile-panel%%v.log 2>&1
   if errorlevel 1 (
     type build\host\compile-panel%%v.log
     exit /b 1
@@ -18,3 +18,4 @@ for %%v in (1 2) do (
   build\host\panel%%v.exe
   if errorlevel 1 exit /b 1
 )
+
