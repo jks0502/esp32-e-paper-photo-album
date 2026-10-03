@@ -1,0 +1,160 @@
+{
+  "version": "v2-slide-in",
+  "units": "mm",
+  "case_dimensions": [
+    111.0,
+    99.0,
+    22.4
+  ],
+  "screen_dimensions": [
+    91.0,
+    77.0,
+    1.2
+  ],
+  "screen_pocket": [
+    92.2,
+    78.2
+  ],
+  "window": [
+    86.8,
+    65.6
+  ],
+  "rail_slot_height": 2.0,
+  "rail_rear_lip_thickness": 1.6,
+  "screen_retention": "side rails, top stop, removable bottom stop; no glue on glass",
+  "screws": {
+    "diameter": 3,
+    "under_head_length": 8,
+    "count": 4,
+    "type": "pan head plastic self tapping",
+    "rear_cover": 2,
+    "entry_gate": 2
+  },
+  "service_notch": {
+    "width_along_board_edge": 40,
+    "front_z": 6,
+    "open_to_rear": true
+  },
+  "driver_documented_dimensions": [
+    48.25,
+    29.46
+  ],
+  "driver_allowed_total_height": 12,
+  "adapter_allowed_envelope": [
+    40,
+    32,
+    10
+  ],
+  "physical_fit_verified": false,
+  "unknowns": [
+    "Rev3 total component thickness",
+    "adapter actual overall size",
+    "actual cable overmold size"
+  ],
+  "passed_checks": [
+    "one valid solid per printable part",
+    "no glass collision",
+    "no installed envelope collision",
+    "no case parts overlap",
+    "clear USB insertion route",
+    "continuous screen insertion swept volume clear",
+    "rear lift constrained by rails",
+    "side and top movement constrained",
+    "bottom sliding constrained by gate",
+    "FPC corridor clear",
+    "gate and cover do not overlap",
+    "continuous gate insertion swept volume clear with cover installed"
+  ],
+  "exports": [
+    {
+      "file": "front.stl",
+      "dimensions": [
+        111.0,
+        99.0,
+        20.0
+      ],
+      "sha256": "a99e5109d6b4813e4a4547a1896e53e7131e618dce2ea68b69e4588a0d5ecd05",
+      "round_trip_valid": true
+    },
+    {
+      "file": "front.stp",
+      "dimensions": [
+        111.0,
+        99.0,
+        20.0
+      ],
+      "sha256": "9bb4b79941887c50b9c0ec4122742433d3b38b851ec82b9517048606a8cc5053",
+      "round_trip_valid": true
+    },
+    {
+      "file": "front.obj",
+      "dimensions": [
+        111.0,
+        99.0,
+        20.0
+      ],
+      "sha256": "cd04a5e127347c8f1e0520306538fa87aa6e52d66a10f0ce19d654156ec0136a",
+      "round_trip_valid": true
+    },
+    {
+      "file": "back.stl",
+      "dimensions": [
+        111.0,
+        88.69999980926514,
+        2.4000000953674316
+      ],
+      "sha256": "40632b217b6894f6590c64cb08a642b77ab814f48d504e6cfe7e7f8377ed94df",
+      "round_trip_valid": true
+    },
+    {
+      "file": "back.stp",
+      "dimensions": [
+        111.0,
+        88.7,
+        2.4
+      ],
+      "sha256": "ed6e0765dc2b146f9a58a9d9085a24a5a2f0be2edd1b5cbddcc3b0367406b697",
+      "round_trip_valid": true
+    },
+    {
+      "file": "back.obj",
+      "dimensions": [
+        111.0,
+        88.69999980926514,
+        2.4000000953674316
+      ],
+      "sha256": "756c20a039f8e449aed53f5d37887d3f708ef65c9e1126d54ceb3523f385ad3e",
+      "round_trip_valid": true
+    },
+    {
+      "file": "gate.stl",
+      "dimensions": [
+        111.0,
+        20.200000762939457,
+        14.5
+      ],
+      "sha256": "8b2aec1b50ca793dc858b38a2c35376c12408d157b30daa0cc2d003b9b9dc1d3",
+      "round_trip_valid": true
+    },
+    {
+      "file": "gate.stp",
+      "dimensions": [
+        111.0,
+        20.200000000000003,
+        14.5
+      ],
+      "sha256": "9363a193de1b29c7d3339e65700e777cdca7b2bfbbba0cc5171b0588b3b48c1d",
+      "round_trip_valid": true
+    },
+    {
+      "file": "gate.obj",
+      "dimensions": [
+        111.0,
+        20.200000762939453,
+        14.5
+      ],
+      "sha256": "aaa4e1cd0826a6202219d0d5f49f85ecd0ee0e4cd413639d8632b8561b4b14c9",
+      "round_trip_valid": true
+    }
+  ]
+}

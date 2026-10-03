@@ -1,0 +1,16 @@
+# Local photos and generated files are never part of the public source by default.
+/photos/
+/local-preview/
+/firmware/CoupleFrame/Photos.cpp
+/firmware/CoupleFrame/Photos.h
+/build/
+/build-*/
+*.bin
+*.elf
+*.map
+*.merged.bin
+*.bootloader.bin
+*.partitions.bin
+*.log
+__pycache__/
+*.py[cod]
